@@ -1,0 +1,162 @@
+div#containerFooter {
+  background: #FDE1C9;
+  width: 100%;
+}
+
+div#footer1 {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto
+}
+
+div#footer1 img{
+  width: 250px;
+  margin-top: 2rem;
+  margin-bottom: 1rem
+}
+
+div#footer1 p{
+  color: black;
+  font-size: 1.5rem;
+}
+
+div#contactDiv span {
+  margin-bottom: 1.3rem;
+  margin-right: 1rem;
+  color: rgb(43, 42, 42) ;
+  font-size: 4rem;
+
+}
+
+div#socialMediaDivFooter a {
+  margin: 0 1rem
+}
+
+div#socialMediaDivFooter a img {
+  width: 40px;
+  height: 40px;
+}
+
+div#socialMediaDivFooter {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instagramIcon {
+  color: #A5308C;
+  font-size: 4rem;
+}
+
+#facebookIcon {
+  color: #3767A4;
+  font-size: 3.6rem
+}
+
+#youtubeIcon {
+  color: #CF3F3C;
+  font-size: 4.5rem
+}
+
+#whatsappIcon {
+  color: rgb(30, 204, 30);
+  font-size: 4rem;
+}
+
+div#footer2 {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto
+}
+
+.menuDiv {
+  padding-bottom: 2rem;
+}
+
+.menuDiv h2 {
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  margin-left:  0;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  color: black
+}
+
+.menuDiv a {
+  text-align: left;
+  text-decoration: none;
+  color: rgb(79, 78, 78);
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  
+}
+
+.menuDiv a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.menuDiv p {
+  text-align: left;
+  color:rgb(79, 78, 78);
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#colaboreText {
+  text-align: left;
+  margin-top: 2rem
+}
+
+@media(min-width: 1024px) {
+  div#containerFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  div#footer1 {
+    text-align: center;
+    width: 98%;
+    margin: 2rem auto;
+    padding-left: 0rem
+  }
+  div#footer1 img{
+    margin-top: 3rem;
+    margin-bottom: 3rem
+  }
+  div#footer1 p{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 1.5rem auto
+  }
+  div#footer2 {
+    width: 98%;
+    margin-top: 5.3rem;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div#footer2 h2 {
+    font-size: 1.8rem
+  }
+
+  div#menuFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 4rem
+  }
+ 
+}
+
+
+

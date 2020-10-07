@@ -1,0 +1,10 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  font-size: 62.5%
+}

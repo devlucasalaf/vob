@@ -81,61 +81,45 @@ const Header = () => {
               </div>
               <div className='collapseItems'>
                 <a href='/'>QUEM SOMOS</a>
-                <ButtonDropdown isOpen={dropdownOpen} toggle={dropDown}>
-                  <DropdownToggle id='containerSubItems' caret>
-                    <span id='buttonSubItems'>{dropdownOpen === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</span>
-                  </DropdownToggle>
-                  <DropdownMenu className='divSubItems' id='divSubItems1'>
-                    <a className='subItems' href='/'>O VOB</a>
-                    <a className='subItems' href='/'>HISTÓRICO</a>
-                    <a className='subItems' href='/'>TRANSPARÊNCIA</a>
-                    <a className='subItems' href='/'>EQUIPE VOB</a>
-                  </DropdownMenu>
-                </ButtonDropdown>
+                <button onClick={dropDown} className='buttonSubItems'>{dropdownOpen === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</button>
+              </div>
+              <div className={dropdownOpen === false ? 'blockDiv' : 'blockDivOn'}>
+                <a className='subItemsn' href='/'>O VOB</a>
+                <a className='subItemsn' href='/'>HISTÓRICO</a>
+                <a className='subItemsn' href='/'>TRANSPARÊNCIA</a>
+                <a className='subItemsn' href='/'>EQUIPE VOB</a>
               </div>
               <div className='collapseItems'>
                 <a href='/'>NÚCLEOS</a>
-                <ButtonDropdown isOpen={dropdownOpen2} toggle={dropDown2}>
-                  <DropdownToggle id='containerSubItems' caret>
-                    <span id='buttonSubItems'>{dropdownOpen2 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</span>
-                  </DropdownToggle>
-                  <DropdownMenu className='divSubItems' id='divSubItems2'>
-                    <a className='subItems' href='/'>LEITURA LIVRE</a>
-                    <a className='subItems' href='/'>PARCERIAS</a>
-                    <a className='subItems' href='/'>DOAÇÃO DE SANGUE</a>
-                    <a className='subItems' href='/'>CAMPANHA DO ABRAÇO</a>
-                    <a className='subItems' href='/'>CLUBINHO DA LEITURA</a>
-                    <a className='subItems' href='/'>BRECHÓ SOLIDÁRIO</a>
-                    <a className='subItems' href='/'>APADRINHAMENTO DO BEM</a>
-                    <a className='subItems' href='/'>CAIXOTE SOLIDÁRIO</a>
-                  </DropdownMenu>
-                </ButtonDropdown>
+                <button onClick={dropDown2} className='buttonSubItems'>{dropdownOpen2 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</button>
+              </div>
+              <div className={dropdownOpen2 === false ? 'blockDiv' : 'blockDivOn'}>
+                <a className='subItemsn' href='/'>LEITURA LIVRE</a>
+                <a className='subItemsn' href='/'>PARCERIAS</a>
+                <a className='subItemsn' href='/'>DOAÇÃO DE SANGUE</a>
+                <a className='subItemsn' href='/'>CAMPANHA DO ABRAÇO</a>
+                <a className='subItemsn' href='/'>CLUBINHO DA LEITURA</a>
+                <a className='subItemsn' href='/'>BRECHÓ SOLIDÁRIO</a>
+                <a className='subItemsn' href='/'>APADRINHAMENTO DO BEM</a>
+                <a className='subItemsn' href='/'>CAIXOTE SOLIDÁRIO</a>
               </div>
               <div className='collapseItems'>
                 <a href='/'>COMO AJUDAR</a>
-                <ButtonDropdown isOpen={dropdownOpen3} toggle={dropDown3}>
-                  <DropdownToggle id='containerSubItems' caret>
-                    <span id='buttonSubItems'>{dropdownOpen3 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</span>
-                  </DropdownToggle>
-                  <DropdownMenu className='divSubItems' id='divSubItems3'>
-                    <a className='subItems' href='/'>SEJA VOLUNTÁRIO</a>
-                    <a className='subItems' href='/'>DOAÇÕES</a>
-                    <a className='subItems' href='/'>APADRINHE UMA FAMÍLIA</a>
-                  </DropdownMenu>
-                </ButtonDropdown>
+                <button onClick={dropDown3} className='buttonSubItems'>{dropdownOpen3 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</button>
+              </div>
+              <div className={dropdownOpen3 === false ? 'blockDiv' : 'blockDivOn'}>
+                <a className='subItemsn' href='/'>SEJA VOLUNTÁRIO</a>
+                <a className='subItemsn' href='/'>DOAÇÕES</a>
+                <a className='subItemsn' href='/'>APADRINHE UMA FAMÍLIA</a>
               </div>
               <div className='collapseItems'>
                 <a href='/'>CONTEÚDOS</a>
-                <ButtonDropdown isOpen={dropdownOpen4} toggle={dropDown4}>
-                  <DropdownToggle id='containerSubItems' caret>
-                    <span id='buttonSubItems'>{dropdownOpen4 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</span>
-                  </DropdownToggle>
-                  <DropdownMenu className='divSubItems' id='divSubItems4'>
-                    <a className='subItems' href='/'>CALENDÁRIO DE CAMPANHAS</a>
-                    <a className='subItems' href='/'>CAMPANHAS</a>
-                    <a className='subItems' href='/'>NOTÍCIAS</a>
-                  </DropdownMenu>
-                </ButtonDropdown>
+                <button onClick={dropDown4} className='buttonSubItems'>{dropdownOpen4 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</button>
+              </div>
+              <div className={dropdownOpen4 === false ? 'blockDiv' : 'blockDivOn'}>
+                <a className='subItemsn' href='/'>CALENDÁRIO DE CAMPANHAS</a>
+                <a className='subItemsn' href='/'>CAMPANHAS</a>
+                <a className='subItemsn' href='/'>NOTÍCIAS</a>
               </div>
               <div className='collapseItems'>
                 <a href='/'>CONTATO</a>

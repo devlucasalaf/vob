@@ -4,7 +4,8 @@ import './styless.css'
 const Home = () => {
   return (
     <div>
-
+      <div id='dedede'>
+      </div>
     </div>
   )
 }

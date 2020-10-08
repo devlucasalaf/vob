@@ -216,8 +216,23 @@ div#navBar {
   text-decoration: none;
 }
 
+@keyframes slidein {
+  from {
+    transform: translateY(3%);
+    opacity: .1;
+    width: 300%
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+    width: 100%;
+  }
+}
+
 .navBarDropdown:hover .navBarItens {
   display: block;
+  animation-name: slidein;
+  animation-duration: .4s;
 }
 
 .navBarDropdown:hover .navBarButton {

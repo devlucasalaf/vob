@@ -3,8 +3,9 @@ import './styless.css'
 
 const Home = () => {
   return (
-    <div>
+    <div id='containerHome'>
       <div id='dedede'>
+        Aqui ficará o conteúdo das páginas!
       </div>
     </div>
   )

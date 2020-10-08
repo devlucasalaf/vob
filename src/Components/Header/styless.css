@@ -1,6 +1,10 @@
 div#containerHeader {
   width: 100vw;
-  box-shadow: 0px 0px 20px 2px rgb(216, 207, 207)
+  box-shadow: 0px 0px 20px 2px rgb(216, 207, 207);
+  background: white;
+  position: fixed;
+  height: 120px;
+  top: 0
 }
 
 div#headerElements {
@@ -13,7 +17,7 @@ div#headerElements {
 }
 
 div#headerElements img {
-  width: 200px;
+  width: 20rem;
 }
 
 div#navBar {
@@ -63,8 +67,10 @@ div#collapseDiv {
     color: white;
     padding: .5rem;
     border: 0.5px solid white;
-    background: #E20613;
-    
+    background: #E20613;    
+  }
+  .subItemsn:hover {
+    text-decoration: none;
   }
 
 .collapseItems {
@@ -122,6 +128,9 @@ div#collapseDiv {
 
 div#menuPizza button {
   display: none
+}
+div#headerElements img {
+  width: 20rem;
 }
 
 div#headerElements {

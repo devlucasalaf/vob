@@ -7,11 +7,8 @@ const Home = () => {
   const [opacState, setOpacState] = useState(0)
 
   const images = [
-    './banner-brecho.png',
-    './banner-campanha-abraco.png',
-    './banner-cantinho-leitura.png',
     './banner-doacao.png',
-    './banner-leitura-livre.png'
+    './banner-cantinho-leitura.png',
   ]
 
   useEffect(() => {

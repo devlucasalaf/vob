@@ -34,8 +34,6 @@ const Home = () => {
     xProject === -300 ? setXProject(-300) : setXProject(xProject - 100);
   }
 
-  console.log(xProject)
-
   return (
     <div id='containerHome'>
       <div id='transition-images'>
@@ -45,8 +43,10 @@ const Home = () => {
           )
         })}
       </div>
-      <h1 id='project-h1' className='project-titles'>CONHEÇA TODOS OS NOSSOS PROJETOS</h1>
-      <p id='project-p' className='project-titles'>Há mais de 6 anos vivendo o BEM</p>
+      <div id='first-title-projects-home'>
+        <h1 id='project-h1' className='project-titles'>CONHEÇA TODOS OS NOSSOS PROJETOS</h1>
+        <p id='project-p' className='project-titles'>Há mais de 6 anos vivendo o BEM</p>
+      </div>
       <div id='projects-slider'>
         <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-01'>
           <div className='sheet' id='sheet-1'>

@@ -22,23 +22,25 @@ div#transition-images {
 
 div#projects-slider {
   display: flex;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   position: relative;
   align-items: center;
   margin: 2rem auto;
+  flex-direction: column;
 }
 
 .slider-sheet {
-  min-width: 25%;
-  height: 100%;
+  width: 100%;
+  max-width: 680px;
+  height: 400px;
   position: relative;
   transition: 0.5s;
   overflow: hidden;
-  height: 81vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 3rem auto;
 }
 
 .sheet {
@@ -46,9 +48,9 @@ div#projects-slider {
   text-align: center;
   padding-top: 20rem;
   transition: 0.3s;
-  box-shadow: 1px 2px 20px 5px #e20615cb;
-  opacity: 0;
-  background: #e20615cb;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.529);
+  font-weight: bold;
 }
 
 .slider-sheet:hover .sheet {
@@ -77,6 +79,10 @@ div#projects-slider {
   background: orange;
   transition: 0.2s;
   box-shadow: 2px 2px 12px #090909;
+}
+
+div#first-title-projects-home {
+  margin-top: 5rem;
 }
 
 .sheet a:hover {
@@ -118,6 +124,9 @@ div#projects-slider {
   text-align: center;
   bottom: 0;
   width: 100%;
+  background: #f5f4f4;
+  padding-top: 1rem;
+  margin: 0;
 }
 
 .slider-sheet .title-div-h1 h1 {
@@ -138,11 +147,11 @@ div#projects-slider {
 }
 
 .btn-slider {
-  background: none;
-  border: none;
-  font-size: 4rem;
+  display: none;
+}
+
+.btn-slider:focus {
   outline: none;
-  transition: 0.2s;
 }
 
 .btn-slider:hover {
@@ -169,4 +178,82 @@ div#projects-slider {
   font-size: 2rem;
   margin-bottom: 5rem;
   color: rgb(89, 87, 87);
+}
+
+@media (min-width: 1024px) {
+  div#projects-slider {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin: 2rem auto;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .slider-sheet {
+    min-width: 25%;
+    height: 100%;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    height: 81vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-slider {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    outline: none;
+    transition: 0.2s;
+  }
+
+  .sheet {
+    height: 90%;
+    text-align: center;
+    padding-top: 20rem;
+    transition: 0.3s;
+    box-shadow: 1px 2px 20px 5px #e20615cb;
+    opacity: 0;
+    background: #e20615cb;
+  }
+
+  .slider-sheet:hover .sheet {
+    opacity: 1;
+  }
+
+  .sheet p {
+    font-size: 1.5rem;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  .sheet a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    width: 14rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    background: orange;
+    transition: 0.2s;
+    box-shadow: 2px 2px 12px #090909;
+  }
+
+  .sheet a:hover {
+    text-decoration: none;
+    background: rgb(216, 141, 2);
+    color: white;
+  }
 }

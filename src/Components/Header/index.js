@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './styless.css'
 import { Collapse } from 'reactstrap'
 import { HiOutlineX, HiOutlineMenu, HiOutlineChevronDown, HiOutlineChevronUp } from 'react-icons/hi'
-import { ButtonDropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
 
 const Header = () => {
 
@@ -28,52 +27,52 @@ const Header = () => {
         <div id='navBar'>
           <a href='/' id='homeA' className={window.location.href === 'http://localhost:3000/' ? 'nav1' : 'navBarButton'}>HOME</a>
           <div className='navBarDropdown'>
-            <a className={window.location.href === 'http://localhost:3000/a' ? 'nav1' : 'navBarButton'} href='/'>QUEM SOMOS</a>
+            <a className={window.location.href === 'http://localhost:3000/a' ? 'nav1' : 'navBarButton'} href='/o-vob'>QUEM SOMOS</a>
             <div className='navBarItens'>
               <span>white</span>
-              <a href='/'>O VOB</a>
-              <a href='/'>HISTÓRICO</a>
-              <a href='/'>TRANSPARÊNCIA</a>
-              <a href='/'>EQUIPE VOB</a>
+              <a href='/o-vob'>O VOB</a>
+              <a href='/historico'>HISTÓRICO</a>
+              <a href='/transparencia'>TRANSPARÊNCIA</a>
+              <a href='/equipe-vob'>EQUIPE VOB</a>
             </div>
           </div>
           <div className='navBarDropdown'>
-            <a className={window.location.href === 'http://localhost:3000/b' ? 'nav1' : 'navBarButton'} href='/'>NÚCLEOS</a>
+            <a className={window.location.href === 'http://localhost:3000/b' ? 'nav1' : 'navBarButton'} href='/nucleos'>NÚCLEOS</a>
             <div className='navBarItens'>
               <span>white</span>
-              <a href='/'>PARCERIAS</a>
-              <a href='/'>LEITURA LIVRE</a>
-              <a href='/'>DOAÇÃO DE SANGUE</a>
-              <a href='/'>CAMPANHA DO ABRAÇO</a>
-              <a href='/'>CLUBINHO DA LEITURA</a>
-              <a href='/'>BRECHÓ SOLIDÁRIO</a>
-              <a href='/'>APADRINHAMENTO DO BEM</a>
-              <a href='/'>CAIXOTE SOLIDÁRIO</a>
+              <a href='/parcerias'>PARCERIAS</a>
+              <a href='/leitura-livre'>LEITURA LIVRE</a>
+              <a href='/doacao-de-sangue'>DOAÇÃO DE SANGUE</a>
+              <a href='/campanha-do-abraco'>CAMPANHA DO ABRAÇO</a>
+              <a href='/clubinho-da-leitura'>CLUBINHO DA LEITURA</a>
+              <a href='/brecho-solidario'>BRECHÓ SOLIDÁRIO</a>
+              <a href='/apadrinhamento-do-bem'>APADRINHAMENTO DO BEM</a>
+              <a href='/caixote-solidario'>CAIXOTE SOLIDÁRIO</a>
             </div>
           </div>
           <div className='navBarDropdown'>
-            <a className={window.location.href === 'http://localhost:3000/c' ? 'nav1' : 'navBarButton'} href='/'>COMO AJUDAR</a>
+            <a className={window.location.href === 'http://localhost:3000/c' ? 'nav1' : 'navBarButton'} href='/como-ajudar'>COMO AJUDAR</a>
             <div className='navBarItens'>
               <span>white</span>
-              <a href='/'>SEJA VOLUNTÁRIO</a>
-              <a href='/'>DOAÇÕES</a>
-              <a href='/'>APADRINHE UMA FAMÍLIA</a>
+              <a href='/seja-voluntario'>SEJA VOLUNTÁRIO</a>
+              <a href='/doacoes'>DOAÇÕES</a>
+              <a href='/apadrinhe-uma-familia'>APADRINHE UMA FAMÍLIA</a>
             </div>
           </div>
           <div className='navBarDropdown'>
-            <a className={window.location.href === 'http://localhost:3000/d' ? 'nav1' : 'navBarButton'} href='/'>CONTEÚDOS</a>
+            <a className={window.location.href === 'http://localhost:3000/d' ? 'nav1' : 'navBarButton'} href='/calendario-de-campanhas'>CONTEÚDOS</a>
             <div className='navBarItens'>
               <span>white</span>
-              <a href='/'>CALENDÁRIO DE CAMPANHAS</a>
-              <a href='/'>CAMPANHAS</a>
-              <a href='/'>NOTÍCIAS</a>
+              <a href='/calendario-de-campanhas'>CALENDÁRIO DE CAMPANHAS</a>
+              <a href='/campanhas'>CAMPANHAS</a>
+              <a href='/noticias'>NOTÍCIAS</a>
             </div>
           </div>
-          <a href='/' id='contatoA' className={window.location.href === 'http://localhost:3000/e' ? 'nav1' : 'navBarButton'}>CONTATO</a>
-          <a href='/' className='doeButton'>DOE AGORA</a>
+          <a href='/contato' id='contatoA' className={window.location.href === 'http://localhost:3000/e' ? 'nav1' : 'navBarButton'}>CONTATO</a>
+          <a href='/doe-agora' className='doeButton'>DOE AGORA</a>
         </div>
         <div id='menuPizza'>
-          <button onClick={toggle}>{isOpen === false ? <HiOutlineMenu /> : <HiOutlineX />}</button>
+          <button id='menuHamburguer' onClick={toggle}>{isOpen === false ? <HiOutlineMenu /> : <HiOutlineX />}</button>
           <div id='collapseDiv'>
             <Collapse isOpen={isOpen}>
               <div className='collapseItems'>

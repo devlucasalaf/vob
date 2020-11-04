@@ -93,14 +93,14 @@ const Header = () => {
                 <button onClick={dropDown2} className='buttonSubItems'>{dropdownOpen2 === false ? <HiOutlineChevronDown /> : <HiOutlineChevronUp />}</button>
               </div>
               <div className={dropdownOpen2 === false ? 'blockDiv' : 'blockDivOn'}>
-                <a className='subItemsn' href='/'>LEITURA LIVRE</a>
-                <a className='subItemsn' href='/'>PARCERIAS</a>
-                <a className='subItemsn' href='/'>DOAÇÃO DE SANGUE</a>
-                <a className='subItemsn' href='/'>CAMPANHA DO ABRAÇO</a>
-                <a className='subItemsn' href='/'>CLUBINHO DA LEITURA</a>
-                <a className='subItemsn' href='/'>BRECHÓ SOLIDÁRIO</a>
-                <a className='subItemsn' href='/'>APADRINHAMENTO DO BEM</a>
-                <a className='subItemsn' href='/'>CAIXOTE SOLIDÁRIO</a>
+                <a className='subItemsn' href='/leitura-livre'>LEITURA LIVRE</a>
+                <a className='subItemsn' href='/parcerias'>PARCERIAS</a>
+                <a className='subItemsn' href='/doacao-de-sangue'>DOAÇÃO DE SANGUE</a>
+                <a className='subItemsn' href='/campanha-do-abraco'>CAMPANHA DO ABRAÇO</a>
+                <a className='subItemsn' href='/clubinho-da-leitura'>CLUBINHO DA LEITURA</a>
+                <a className='subItemsn' href='/brecho-solidario'>BRECHÓ SOLIDÁRIO</a>
+                <a className='subItemsn' href='/apadrinhamento-do-bem'>APADRINHAMENTO DO BEM</a>
+                <a className='subItemsn' href='/caixote-solidario'>CAIXOTE SOLIDÁRIO</a>
               </div>
               <div className='collapseItems'>
                 <a href='/'>COMO AJUDAR</a>

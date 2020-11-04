@@ -6,19 +6,19 @@ const Home = () => {
 
   const [opacState, setOpacState] = useState(0)
 
-  const images = [
+  const bannerImages = [
     './banner-doacao.png',
-    './banner-cantinho-leitura.png',
+    './banner-leitura-livre.png'
   ]
 
   useEffect(() => {
     setTimeout(() => {
-      if (opacState < (images.length - 1)) {
+      if (opacState < (bannerImages.length - 1)) {
         setOpacState(opacState + 1)
       } else {
         setOpacState(0)
       }
-    }, 8000)
+    }, 7000)
   }, [opacState])
 
   const [xProject, setXProject] = useState(0)
@@ -28,15 +28,15 @@ const Home = () => {
   }
 
   const swapRight = () => {
-    xProject === -300 ? setXProject(-300) : setXProject(xProject - 100);
+    xProject === -400 ? setXProject(-400) : setXProject(xProject - 100);
   }
 
   return (
     <div id='containerHome'>
       <div id='transition-images'>
-        {images.map((item, index) => {
+        {bannerImages.map((item, index) => {
           return (
-            <img id={opacState === index ? 'show-opacity' : 'hidden-opacity'} className='banner-images' key={index} src={item}></img>
+            <img id={opacState === index ? 'show-opacity' : 'hidden-opacity'} className='banner-images' key={index} src={item} alt={'imagem' + index}></img>
           )
         })}
       </div>
@@ -47,61 +47,70 @@ const Home = () => {
       <div id='projects-slider'>
         <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-01'>
           <div className='sheet' id='sheet-1'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>Juntos somos mais fortes. Essa frase faz todo sentido para esse núcleo que adora uma parceria.</p>
+            <a href='/leitura-livre'>VER MAIS</a>
+          </div>
+          <div className='title-div-h1'>
+            <h1>Parceria</h1>
+          </div>
+        </div>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-02'>
+          <div className='sheet' id='sheet-1'>
+            <p>Uma boa leitura faz bem a qualquer pessoa. Já imaginou uma estante de livros pública na sua praça/rua?</p>
             <a href='/leitura-livre'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
             <h1>Leitura Livre</h1>
           </div>
         </div>
-        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-02'>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-03'>
           <div className='sheet' id='sheet-2'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>Sangue bom pra gente é aquele(a) que se doa e doa o seu sangue para salvar até 4 vidas. </p>
             <a href='/doacao-de-sangue'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
             <h1>Doação de Sangue</h1>
           </div>
         </div>
-        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-03'>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-04'>
           <div className='sheet' id='sheet-3'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>Um abraço pode mudar o dia de uma pessoa. Um alimento também. Imagina agora uma campanha que une as duas coisas.</p>
             <a href='/campanha-do-abraco'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
             <h1>Campanha do Abraço</h1>
           </div>
         </div>
-        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-04'>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-05'>
           <div className='sheet' id='sheet-4'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>As crianças são a nossa esperança de um futuro melhor. Mas é no presente que podemos fazer a diferença na vida delas.</p>
             <a href='/clubinho-da-leitura'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
             <h1>Clubinho da Leitura</h1>
           </div>
         </div>
-        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-05'>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-06'>
           <div className='sheet' id='sheet-5'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>Aquela sua roupa nova (nunca usada) ou pouco usada (que você não usa mais) pode servir para alguém e ainda gerar recursos para os trabalhos do Viver o BEM.</p>
             <a href='/brecho-solidario'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
             <h1>Brechó Solidário</h1>
           </div>
         </div>
-        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-06'>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-07'>
           <div className='sheet' id='sheet-6'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>Quer ser padrinho/madrinha de uma família em vulnerabilidade social/econômica e ajudar a compor a sua cesta básica? </p>
             <a href='/apadrinhamento-do-bem'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
             <h1>Apadrinhamento do Bem</h1>
           </div>
         </div>
-        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-07'>
+        <div className='slider-sheet' style={{ transform: `translateX(${xProject}%)` }} id='projeto-08'>
           <div className='sheet' id='sheet-7'>
-            <p>Este é um dos projetos mais brabos que tem.</p>
+            <p>Quer participar dessa rede de auxílio para arrecadação de alimentos não perecíveis e roupas para quem mais precisa?</p>
             <a href='/caixote-solidario'>VER MAIS</a>
           </div>
           <div className='title-div-h1'>
@@ -109,7 +118,7 @@ const Home = () => {
           </div>
         </div>
         <button disabled={xProject === 0} className='btn-slider' onClick={swapLeft} id='button-left'><HiOutlineChevronLeft /></button>
-        <button disabled={xProject === -300} className='btn-slider' onClick={swapRight} id='button-right'><HiOutlineChevronRight /></button>
+        <button disabled={xProject === -400} className='btn-slider' onClick={swapRight} id='button-right'><HiOutlineChevronRight /></button>
       </div>
     </div>
   )

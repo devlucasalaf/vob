@@ -52,17 +52,17 @@ const Abraco = () => {
       <div className='content-nucleo'>
         <div id='infinite-carrousel'>
           <div className='carrousel-photo' style={{ transform: `translateX(${xCA}%)`, transitionDuration: `${transTime}s` }}>
-            <img src={photos[photos.length - 1]}></img>
+            <img alt='last' src={photos[photos.length - 1]}></img>
           </div>
           {photos.map((photo, index) => {
             return (
               <div key={index} className='carrousel-photo' style={{ transform: `translateX(${xCA}%)`, transitionDuration: `${transTime}s` }}>
-                <img src={photo}></img>
+                <img alt={index} src={photo}></img>
               </div>
             )
           })}
           <div className='carrousel-photo' style={{ transform: `translateX(${xCA}%)`, transitionDuration: `${transTime}s` }}>
-            <img src={photos[0]}></img>
+            <img alt='first' src={photos[0]}></img>
           </div>
           <button onClick={handleLeft} className='btn-change-photo btn-change-left'><HiOutlineChevronLeft /></button>
           <button onClick={handleRight} className='btn-change-photo btn-change-right '><HiOutlineChevronRight /></button>
@@ -73,7 +73,7 @@ const Abraco = () => {
         </p>
       </div>
       <div id='videos-content'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/glFNSQ8qVRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe title='project-video' width="560" height="315" src="https://www.youtube.com/embed/glFNSQ8qVRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Ação com as crianças de Jardim Gramacho em novembro de 2019.</p>
       </div>
     </div>

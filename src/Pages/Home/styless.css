@@ -1,3 +1,11 @@
+#blimOn {
+  display: block;
+}
+
+#blimOff {
+  display: none;
+}
+
 div#containerHome {
   margin-top: 121px;
 }
@@ -46,7 +54,7 @@ div#projects-slider {
 .sheet {
   height: 90%;
   text-align: center;
-  padding-top: 20rem;
+  padding-top: 15rem;
   transition: 0.3s;
   opacity: 1;
   background: rgba(0, 0, 0, 0.529);
@@ -92,31 +100,35 @@ div#first-title-projects-home {
 }
 
 #projeto-01 {
-  background-image: url("/banner-brecho.png");
+  background-image: url("/home-projects/parceria.jpg");
 }
 
 #projeto-02 {
-  background-image: url("/banner-campanha-abraco.png");
+  background-image: url("/home-projects/leitura.jpg");
 }
 
 #projeto-03 {
-  background-image: url("/banner-cantinho-leitura.png");
+  background-image: url("/home-projects/doacao.jpg");
 }
 
 #projeto-04 {
-  background-image: url("/banner-doacao.png");
+  background-image: url("/home-projects/abraco.jpg");
 }
 
 #projeto-05 {
-  background-image: url("/banner-leitura-livre.png");
+  background-image: url("/home-projects/clubinho.jpg");
 }
 
 #projeto-06 {
-  background-image: url("/banner-brecho.png");
+  background-image: url("/home-projects/brecho.jpg");
 }
 
 #projeto-07 {
-  background-image: url("/banner-campanha-abraco.png");
+  background-image: url("/home-projects/parceria.jpg");
+}
+
+#projeto-08 {
+  background-image: url("/home-projects/caixote.jpg");
 }
 
 .slider-sheet .title-div-h1 {
@@ -216,15 +228,29 @@ div#first-title-projects-home {
   .sheet {
     height: 90%;
     text-align: center;
-    padding-top: 20rem;
+    padding-top: 10rem;
     transition: 0.3s;
     box-shadow: 1px 2px 20px 5px #e20615cb;
     opacity: 0;
     background: #e20615cb;
+    position: relative;
   }
 
   .slider-sheet:hover .sheet {
     opacity: 1;
+  }
+
+  .slider-sheet:hover .sheet p {
+    transform: translateY(10%);
+  }
+
+  .slider-sheet:hover .sheet a {
+    transform: translateY(30%);
+  }
+
+  .slider-sheet .title-div-h1 h1 {
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .sheet p {
@@ -232,7 +258,8 @@ div#first-title-projects-home {
     color: white;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    height: 180px;
+    transition: 0.3s;
   }
 
   .sheet a {
@@ -247,7 +274,7 @@ div#first-title-projects-home {
     font-size: 2rem;
     border-radius: 0.8rem;
     background: orange;
-    transition: 0.2s;
+    transition: all 0.3s;
     box-shadow: 2px 2px 12px #090909;
   }
 

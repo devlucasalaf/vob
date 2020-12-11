@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div id='containerHeader'>
       <div id='headerElements'>
-        <a href='/'><img src='/logotipoTransparente.png' alt='logotipo'></img></a>
+        <a href='/'><img src='./logo/logotipoTransparente.png' alt='logotipo'></img></a>
         <div id='navBar'>
           <a href='/' id='homeA' className={window.location.href === 'http://localhost:3000/' ? 'nav1' : 'navBarButton'}>HOME</a>
           <div className='navBarDropdown'>

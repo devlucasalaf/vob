@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react'
 import './styless.css'
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi'
 
+
 const Home = () => {
 
   const [opacState, setOpacState] = useState(0)
 
   const bannerImages = [
-    './banner-doacao.png',
-    './banner-leitura-livre.png'
+    "./home-assets/banner-home-passado.png",
+    "./home-assets/banner-home-futuro.png" 
   ]
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const Home = () => {
       } else {
         setOpacState(0)
       }
-    }, 7000)
+    }, 6000)
   }, [opacState])
 
   const [xProject, setXProject] = useState(0)
@@ -39,6 +40,12 @@ const Home = () => {
             <img id={opacState === index ? 'show-opacity' : 'hidden-opacity'} className='banner-images' key={index} src={item} alt={'imagem' + index}></img>
           )
         })}
+      </div>
+      <div id='vob-stats'>
+        <p><b className='pink-stats'>+ de 6</b><br/>Anos</p>
+        <p><b className='pink-stats'>+ de 80</b><br/>Campanhas</p>
+        <p><b className='pink-stats'>+ de 100</b><br/>Voluntários</p>
+        <p><b className='pink-stats'>25</b><br/>Famílias <br/> Apadrinhadas</p>
       </div>
       <div id='first-title-projects-home'>
         <h1 id='project-h1' className='project-titles'>CONHEÇA TODOS OS NOSSOS PROJETOS</h1>

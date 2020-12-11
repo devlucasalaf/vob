@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div id='containerFooter'>
       <div id='footer1'>
-        <img src='/logotipoTransparente.png' alt='logotipo'></img>
+        <img src='./logo/logotipoTransparente.png' alt='logotipo'></img>
         <p>
           Somos um grupo de jovens que tem como lema Viver o BEM, seja na prática ou em nossas
           redes sociais, compartilhando boas notícias. Nossa maior missão é colaborar com as pessoas
@@ -18,10 +18,10 @@ const Footer = () => {
           <p>viverobemoficial@gmail.com</p>
         </div>
         <div id='socialMediaDivFooter'>
-          <a href='https://instagram.com/viverobemoficial' id='instagramIcon'><img src='/instagramIcon.png' alt='instagramIcon'></img></a>
-          <a href='https://www.facebook.com/viverobemoficial' id='facebookIcon'><img src='/facebookIcon.png' alt='faceIcon'></img></a>
-          <a href='https://www.youtube.com/channel/UCf6wstVaWniYguRJvM4OeOg' id='youtubeIcon'><img src='/youtubeIcon.png' alt='youtubeIcon'></img></a>
-          <a href='https://chat.whatsapp.com/HjSLAHk7ETvHBkGJnQMxX9' id='whatsappIcon'><img src='/whatsappIcon.png' alt='whatsappIcon'></img></a>
+          <a href='https://instagram.com/viverobemoficial' id='instagramIcon'><img src='./social-media/instagramIcon.png' alt='instagramIcon'></img></a>
+          <a href='https://www.facebook.com/viverobemoficial' id='facebookIcon'><img src='./social-media/facebookIcon.png' alt='faceIcon'></img></a>
+          <a href='https://www.youtube.com/channel/UCf6wstVaWniYguRJvM4OeOg' id='youtubeIcon'><img src='./social-media/youtubeIcon.png' alt='youtubeIcon'></img></a>
+          <a href='https://chat.whatsapp.com/HjSLAHk7ETvHBkGJnQMxX9' id='whatsappIcon'><img src='./social-media/whatsappIcon.png' alt='whatsappIcon'></img></a>
         </div>
       </div>
       <div id='footer2'>

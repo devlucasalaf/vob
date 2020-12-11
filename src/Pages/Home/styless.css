@@ -28,6 +28,20 @@ div#transition-images {
   opacity: 1;
 }
 
+div#vob-stats {
+  display: block 
+}
+
+div#vob-stats p {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem 0rem 3rem 0rem
+}
+
+.pink-stats {
+  color: #e20613
+}
+
 div#projects-slider {
   display: flex;
   width: 100%;
@@ -100,35 +114,35 @@ div#first-title-projects-home {
 }
 
 #projeto-01 {
-  background-image: url("/home-projects/parceria.jpg");
+  background-image: url("/home-assets/home-projects/parceria.jpg");
 }
 
 #projeto-02 {
-  background-image: url("/home-projects/leitura.jpg");
+  background-image: url("/home-assets/home-projects/leitura.jpg");
 }
 
 #projeto-03 {
-  background-image: url("/home-projects/doacao.jpg");
+  background-image: url("/home-assets/home-projects/doacao.jpg");
 }
 
 #projeto-04 {
-  background-image: url("/home-projects/abraco.jpg");
+  background-image: url("/home-assets/home-projects/abraco.jpg");
 }
 
 #projeto-05 {
-  background-image: url("/home-projects/clubinho.jpg");
+  background-image: url("/home-assets/home-projects/clubinho.jpg");
 }
 
 #projeto-06 {
-  background-image: url("/home-projects/brecho.jpg");
+  background-image: url("/home-assets/home-projects/brecho.jpg");
 }
 
 #projeto-07 {
-  background-image: url("/home-projects/parceria.jpg");
+  background-image: url("/home-assets/home-projects/parceria.jpg");
 }
 
 #projeto-08 {
-  background-image: url("/home-projects/caixote.jpg");
+  background-image: url("/home-assets/home-projects/caixote.jpg");
 }
 
 .slider-sheet .title-div-h1 {
@@ -193,6 +207,13 @@ div#first-title-projects-home {
 }
 
 @media (min-width: 1024px) {
+
+  div#vob-stats {
+    display: flex;
+    align-items: inherit;
+    justify-content: space-around;  
+  }
+
   div#projects-slider {
     display: flex;
     width: 80%;
